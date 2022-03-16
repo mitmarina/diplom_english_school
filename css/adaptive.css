@@ -1261,6 +1261,35 @@
     #footer #footer-container #footer-logo #footer-copyright {
         left: 131px;
     }
+
+    
+    #contacts #contacts-container #contacts-phones {
+        margin-top: 40px;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item {
+        margin-right: 0;
+    }
+
+    #contacts-phones #contacts-phones-items .contacts-block {
+        font-size: 16px;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items {
+        align-items: flex-start;
+    }
+
+    #contacts #contacts-container #contacts-addresses-items {
+        border-bottom: 2px solid rgb(248, 191, 145);    
+    }
+
+    #process #process-container {
+        padding-bottom: 35px;
+    }
+
+    #contacts #contacts-container {
+        padding-top: 35px;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -1329,35 +1358,6 @@
     #teacher #teacher-container #teacher-items .teacher-item .teacher-item-photo {
         margin-right: -70px;
     }
-
-    #contacts #contacts-container #contacts-phones {
-        margin-top: 40px;
-    }
-
-    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item {
-        margin-right: 0;
-    }
-
-    #contacts-phones #contacts-phones-items .contacts-block {
-        font-size: 16px;
-    }
-
-    #contacts #contacts-container #contacts-phones #contacts-phones-items {
-        align-items: flex-start;
-    }
-
-    #contacts #contacts-container #contacts-addresses-items {
-        border-bottom: 2px solid rgb(248, 191, 145);    
-    }
-
-    #process #process-container {
-        padding-bottom: 35px;
-    }
-
-    #contacts #contacts-container {
-        padding-top: 35px;
-    }
-
     
 }
 
