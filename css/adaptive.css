@@ -1338,6 +1338,14 @@
         padding-top: 35px;
     }
 
+    #contacts #contacts-container #contacts-addresses-items {
+        border-bottom: 2px solid rgb(248, 191, 145);    
+    }
+
+    #contacts #contacts-container #contacts-phones {
+        margin-top: 40px;
+    }
+
     
 }
 
