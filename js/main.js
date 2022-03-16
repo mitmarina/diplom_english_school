@@ -268,7 +268,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: false,
         dots: true,
-        variableWidth: true,
+        variableWidth: false,
         responsive: [
             {
                 breakpoint: 924,

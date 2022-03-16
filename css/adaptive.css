@@ -569,6 +569,15 @@
 
     #contacts #contacts-container #contacts-addresses-items {
         height: 100%;
+        align-items: flex-start;
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -627,6 +636,7 @@
     #teacher #teacher-container #teacher-items .slick-slide {
         max-height: 100%;
         max-width: none;
+        align-items: center;
     }
 
     #process #process-container #process-video,
@@ -637,6 +647,10 @@
 
     #footer #footer-container #footer-logo #footer-copyright {
         left: 325px;
+    }
+
+    #teacher #teacher-container #teacher-items .teacher-item .teacher-item-photo {
+        margin-right: 150px;
     }
 }
 
@@ -884,8 +898,7 @@
         padding-left: 0;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;   
     }
 
     #header #header-container #contact-phone {
@@ -915,6 +928,13 @@
     #header #header-container .menu ul li:hover a,
     #footer #footer-container .menu ul li:hover a {
         color: white;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items {
+        align-items: center;
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #advantages #advantages-container #advantage-items .advantage-item {
@@ -1106,7 +1126,9 @@
         right: -24px;
     }
 
-
+    .slick-slide:active, .slick-slide:focus {
+        outline: none;
+        }
 }
 
 @media screen and (max-width: 459px) {
@@ -1221,6 +1243,18 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    #contacts-phones #contacts-phones-items .contacts-block {
+        font-size: 16px;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items {
+        align-items: flex-start;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item {
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1286,6 +1320,22 @@
 
     #advantages #advantages-container #advantage-items .advantage-item {
         margin-right: 0;
+    }
+
+    #teacher #teacher-container #teacher-items .teacher-item .teacher-item-photo {
+        margin-right: 0;
+    }
+
+    #teacher #teacher-container #teacher-items .teacher-item .teacher-item-photo {
+        margin-right: -70px;
+    }
+
+    #teacher #teacher-container {
+        padding-bottom: 35px;
+    }
+
+    #graduates #graduates-container {
+        padding-top: 35px;
     }
 
     

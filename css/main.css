@@ -857,7 +857,7 @@ body {
     width: 324px;
     margin: 12px;
     background-color: #fff4ea;
-    height: 345px;
+    height: 370px;
 }
 
 .slick-arrow:before {
@@ -1046,7 +1046,7 @@ body {
 .contacts-addresses-item-info-text {
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 18px;
+    font-size: 17px;
     font-family: "RobotoRegular", sans-serif;
     color: rgb(85, 85, 85);
 }
