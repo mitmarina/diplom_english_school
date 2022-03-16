@@ -804,6 +804,10 @@
     #footer #footer-container #footer-logo #footer-copyright {
         left: 232px;
     }
+
+    #contacts #contacts-container #contacts-phones {
+        margin-top: 40px;
+    }
 }
 
 
@@ -841,9 +845,7 @@
     #form #form-container #form-img img {
         max-width: 290px;
     }
-
 }
-
 
 @media screen and (max-width: 505px) {
     #header #header-container .menu ul li {
@@ -1075,7 +1077,6 @@
 
     #contacts #contacts-container #contacts-addresses {
         border-bottom: 2px solid  rgb(248, 191, 145);
-        margin-bottom: 40px;
     }
 
     #contacts #contacts-container {
@@ -1085,7 +1086,6 @@
     #process #process-container {
         padding-bottom: 50px;
     }
-
 
     #footer #footer-container {
         flex-wrap: nowrap;
