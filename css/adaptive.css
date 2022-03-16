@@ -7,6 +7,14 @@
         box-sizing: border-box;
     }
 
+    #contacts #contacts-container #contacts-addresses-items {
+        max-width: none;
+    }
+    
+    #contacts #contacts-container #contacts-addresses-items .contacts-addresses-item {
+        max-width: none;
+    }
+
     .slick-next {
         right: 12px;
     }
