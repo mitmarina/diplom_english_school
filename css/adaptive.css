@@ -826,6 +826,10 @@
     #header #header-container .menu ul li {
         margin: 0 24px;
     }
+
+    #contacts-phones #contacts-phones-items .contacts-block {
+        font-size: 16px;
+    }
 }
 
 
@@ -1062,6 +1066,16 @@
 
     #contacts #contacts-container #contacts-phones #contacts-phones-items {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item {
+        margin-right: 0;
+    }
+
+    #contacts #contacts-container #contacts-addresses {
+        border-bottom: 2px solid  rgb(248, 191, 145);
+        margin-bottom: 40px;
     }
 
     #footer #footer-container {
@@ -1279,9 +1293,9 @@
         align-items: flex-start;
     }
 
-    #contacts #contacts-container #contacts-addresses-items {
+    /* #contacts #contacts-container #contacts-addresses-items {
         border-bottom: 2px solid rgb(248, 191, 145);    
-    }
+    } */
 
     #process #process-container {
         padding-bottom: 35px;
