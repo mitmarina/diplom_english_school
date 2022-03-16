@@ -906,12 +906,14 @@
         border-bottom: 1px solid transparent;
     }
 
-    .menu ul li:hover {
+    #header #header-container .menu ul li:hover,
+    #footer #footer-container .menu ul li:hover {
         background-color: transparent;
         border: 1px solid transparent;
     }
 
-   .menu ul li a:hover {
+    #header #header-container .menu ul li:hover a,
+    #footer #footer-container .menu ul li:hover a {
         color: white;
     }
 
@@ -1012,7 +1014,7 @@
     }
 
     #teacher #teacher-container #teacher-items .teacher-item {
-        max-width: 290px;
+        max-width: none;
         text-align: center;
         align-items: center;
     }
@@ -1067,7 +1069,6 @@
         max-width: 127px;
         font-size: 12px;
         text-align: center;
-
     }
 
     #footer #footer-container #footer-contacts {

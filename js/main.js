@@ -263,19 +263,19 @@ $(document).ready(function () {
     // teacher
 
     $('.your-class').slick({
-        centerMode: true,
+        centerMode: false,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: false,
         dots: true,
-        variableWidth: false,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 924,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: true,
+                    centerMode: false,
                 }
             },
         ]
