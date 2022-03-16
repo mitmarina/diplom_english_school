@@ -621,12 +621,12 @@
 
     #teacher #teacher-container #teacher-items .teacher-item {
         margin-right: 50px;
-        width: 100%;
+        max-width: none;
     }
 
     #teacher #teacher-container #teacher-items .slick-slide {
         max-height: 100%;
-        /* max-width: 350px; */
+        max-width: none;
     }
 
     #process #process-container #process-video,
@@ -1012,7 +1012,7 @@
     }
 
     #teacher #teacher-container #teacher-items .teacher-item {
-        max-width: none;
+        max-width: 290px;
         text-align: center;
         align-items: center;
     }
