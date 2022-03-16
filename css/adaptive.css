@@ -1330,18 +1330,6 @@
         margin-right: -70px;
     }
 
-    #process #process-container {
-        padding-bottom: 35px;
-    }
-
-    #contacts #contacts-container {
-        padding-top: 35px;
-    }
-
-    #contacts #contacts-container #contacts-addresses-items {
-        border-bottom: 2px solid rgb(248, 191, 145);    
-    }
-
     #contacts #contacts-container #contacts-phones {
         margin-top: 40px;
     }
@@ -1356,6 +1344,18 @@
 
     #contacts #contacts-container #contacts-phones #contacts-phones-items {
         align-items: flex-start;
+    }
+
+    #contacts #contacts-container #contacts-addresses-items {
+        border-bottom: 2px solid rgb(248, 191, 145);    
+    }
+
+    #process #process-container {
+        padding-bottom: 35px;
+    }
+
+    #contacts #contacts-container {
+        padding-top: 35px;
     }
 
     
