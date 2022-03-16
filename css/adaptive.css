@@ -1078,6 +1078,15 @@
         margin-bottom: 40px;
     }
 
+    #contacts #contacts-container {
+       padding-top: 50px;
+    }
+
+    #process #process-container {
+        padding-bottom: 50px;
+    }
+
+
     #footer #footer-container {
         flex-wrap: nowrap;
         padding-top: 60px;
