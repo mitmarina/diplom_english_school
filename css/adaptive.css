@@ -583,6 +583,10 @@
         margin-right: auto;
     }
 
+    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item:first-child {
+        margin-right: 50px;
+    }
+
     #contacts #contacts-container #contacts-phones #contacts-phones-items {
         display: flex;
         justify-content: center;
@@ -944,11 +948,8 @@
         color: white;
     }
 
-    #contacts #contacts-container #contacts-phones #contacts-phones-items {
-        align-items: center;
-        max-width: 190px;
-        margin-left: auto;
-        margin-right: auto;
+    container #contacts-phones #contacts-phones-items .contacts-phones-item:first-child {
+        margin-right: 0;
     }
 
     #advantages #advantages-container #advantage-items .advantage-item {
@@ -1076,11 +1077,8 @@
 
     #contacts #contacts-container #contacts-phones #contacts-phones-items {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item {
-        margin-right: 0;
+        align-items: center;
+        text-align: center;
     }
 
     #contacts #contacts-container #contacts-addresses {
@@ -1089,6 +1087,11 @@
 
     #contacts #contacts-container {
        padding-top: 50px;
+    }
+
+    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item:first-child,
+    #contacts #contacts-container #contacts-phones #contacts-phones-items .contacts-phones-item   {
+        margin-right: 0;
     }
 
     #process #process-container {
@@ -1380,6 +1383,14 @@
 
     #teacher #teacher-container #teacher-items .teacher-item .teacher-item-photo {
         margin-right: -70px;
+    }
+
+    #contacts #contacts-container .block-title {
+        text-align: start;
+    }
+
+    #footer #footer-container #footer-logo {
+        margin-bottom: 26px;
     }
     
 }
