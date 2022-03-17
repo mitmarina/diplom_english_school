@@ -312,17 +312,17 @@ $(document).ready(function () {
         })
     });
 
-    let menuShow = 0;
+    let menuShow = FontFaceSetLoadEvent;
     $('.teacher-item-info-more1').click(() => {
-        if(menuShow === 0) {
-            menuShow = 1;
+        if(menuShow === false) {
+            menuShow = true;
             $('.teacher-block1 p').css('display', 'block');
             $('.teacher-svg-down1').css('display', 'none');
             $('.teacher-svg-up1').css('display', 'block');
             $('.teacher-more1').css('display', 'none');
             $('.teacher-less1').css('display', 'block');
-        } else if(menuShow === 1) {
-            menuShow = 0;
+        } else if(menuShow === true) {
+            menuShow = false;
             $('.teacher-block1 p').css('display', 'none');
             $('.teacher-svg-down1').css('display', 'block');
             $('.teacher-svg-up1').css('display', 'none');
@@ -332,15 +332,15 @@ $(document).ready(function () {
     });
 
     $('.teacher-item-info-more2').click(() => {
-        if(menuShow === 0) {
-            menuShow = 1;
+        if(menuShow === false) {
+            menuShow = true;
             $('.teacher-block2 p').css('display', 'block');
             $('.teacher-svg-down2').hide();
             $('.teacher-svg-up2').show();
             $('.teacher-more2').hide();
             $('.teacher-less2').show();
-        } else if(menuShow === 1) {
-            menuShow = 0;
+        } else if(menuShow === true) {
+            menuShow = false;
             $('.teacher-block2 p').css('display', 'none');
             $('.teacher-more2').show();
             $('.teacher-less2').hide();
@@ -351,15 +351,15 @@ $(document).ready(function () {
 
 
     $('.teacher-item-info-more3').click(() => {
-        if(menuShow === 0) {
-            menuShow = 1;
+        if(menuShow === false) {
+            menuShow = true;
             $('.teacher-block3 p').css('display', 'block');
             $('.teacher-svg-down3').hide();
             $('.teacher-svg-up3').show();
             $('.teacher-more3').hide();
             $('.teacher-less3').show();
-        } else if(menuShow === 1) {
-            menuShow = 0;
+        } else if(menuShow === true) {
+            menuShow = false;
             $('.teacher-block3 p').css('display', 'none');
             $('.teacher-more3').show();
             $('.teacher-less3').hide();
@@ -369,15 +369,15 @@ $(document).ready(function () {
     });
 
     $('.teacher-item-info-more4').click(() => {
-        if(menuShow === 0) {
-            menuShow = 1;
+        if(menuShow === false) {
+            menuShow = true;
             $('.teacher-block4 p').css('display', 'block');
             $('.teacher-svg-down4').hide();
             $('.teacher-svg-up4').show();
             $('.teacher-more4').hide();
             $('.teacher-less4').show();
-        } else if(menuShow === 1) {
-            menuShow = 0;
+        } else if(menuShow === true) {
+            menuShow = false;
             $('.teacher-block4 p').css('display', 'none');
             $('.teacher-more4').show();
             $('.teacher-less4').hide();
