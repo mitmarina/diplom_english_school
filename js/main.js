@@ -41,7 +41,7 @@ $(document).ready(function () {
 
         let error = $('.form-action-error');
         error.hide();
-        // let hasError = false;
+        let hasError = false;
         let choose = $('#choose');
         let phone = $('#phone');
         let email = $('#email');
@@ -51,7 +51,7 @@ $(document).ready(function () {
         if (!phone.val()) {
             phone.siblings('.form-action-error').show();
             // error.css('display', 'block')
-            // hasError = true;
+            hasError = true;
             phone.css('border-color', 'red');
             // return;
         } else {
@@ -62,7 +62,7 @@ $(document).ready(function () {
         if (!email.val()) {
             email.siblings('.form-action-error').show();
             // error.css('display', 'block');
-            // hasError = true;
+            hasError = true;
             email.css('border-color', 'red');
             return;
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
                 $.ajax({
                     method: 'POST',
                     url: 'mail.php',
-                    data: {choose: $('choose').val(), phone: $('phone').val(), email: $('email').val}
+                    data: {choose: choose.val(), phone: phone.val(), email: email.val()}
                 })
                     .done(function (response){
                         alert(response);
@@ -89,15 +89,14 @@ $(document).ready(function () {
             }
     });
 
-
-
-    let menuOpen = 0;
+    let menuOpen = false;
     let hasError = false;
+    let item1 = $('.tariff-item-info-more1');
 
     $('.tariff-item-info-more1').click(function() {
 
-        if(menuOpen === 0) {
-            menuOpen = 1;
+        if(menuOpen === false) {
+            menuOpen = true;
             hasError = true;
             $('.tariff-item-more1').css('display', 'block');
             $('.tariff-svg-down1').hide();
@@ -105,8 +104,8 @@ $(document).ready(function () {
             $('.info-more1').hide();
             $('.info-less1').show();
             $('.form-field').addClass('active')
-        } else if(menuOpen === 1) {
-            menuOpen = 0;
+        } else if(menuOpen === true) {
+            menuOpen = false;
             $('.tariff-item-more1').css('display', 'none');
             $('.info-more1').show();
             $('.info-less1').hide();
@@ -116,15 +115,15 @@ $(document).ready(function () {
     });
 
     $('.tariff-item-info-more2').click(function() {
-        if(menuOpen === 0) {
-            menuOpen = 1;
+        if(menuOpen === false) {
+            menuOpen = true;
             $('.tariff-item-more2').css('display', 'block');
             $('.tariff-svg-down2').hide();
             $('.tariff-svg-up2').show();
             $('.info-more2').hide();
             $('.info-less2').show();
-        } else if(menuOpen === 1) {
-            menuOpen = 0;
+        } else if(menuOpen === true) {
+            menuOpen = false;
             $('.tariff-item-more2').css('display', 'none');
             $('.tariff-svg-down2').show();
             $('.tariff-svg-up2').hide();
@@ -134,15 +133,15 @@ $(document).ready(function () {
     });
 
     $('.tariff-item-info-more3').click(function() {
-        if(menuOpen === 0) {
-            menuOpen = 1;
+        if(menuOpen === false) {
+            menuOpen = true;
             $('.tariff-item-more3').css('display', 'block');
             $('.tariff-svg-down3').hide();
             $('.tariff-svg-up3').show();
             $('.info-more3').hide();
             $('.info-less3').show();
-        } else if(menuOpen === 1) {
-            menuOpen = 0;
+        } else if(menuOpen === true) {
+            menuOpen = false;
             $('.tariff-item-more3').css('display', 'none');
             $('.tariff-svg-down3').show();
             $('.tariff-svg-up3').hide();
@@ -312,9 +311,6 @@ $(document).ready(function () {
             $(this).toggleClass("active");
         })
     });
-
-
-
 
     let menuShow = 0;
     $('.teacher-item-info-more1').click(() => {

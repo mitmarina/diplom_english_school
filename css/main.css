@@ -989,13 +989,13 @@ body {
     height: 290px;
     flex-direction: column;
     line-height: 14px;
-    width: 830px;
+    max-width: 830px;
 }
 
 #contacts #contacts-container #contacts-addresses-items .contacts-addresses-item {
     display: flex;
-    margin-right: 60px;
-    width: 384px;
+    margin-right: 90px;
+    max-width: 384px;
 }
 
 #contacts #contacts-container #contacts-addresses-items .contacts-addresses-item .teacher-item-about p {
